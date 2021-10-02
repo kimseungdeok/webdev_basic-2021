@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <title>IntelliJ IDEA 단축키 15가지</title>
     <style>
-        img {
-            width: 50%;
-            height: 1%;
-        }
+        img { width: 50%; height: 1%; float: left;}
+        #header { }
+        .sticky { position : sticky; top : 4px;}
+        .clearfix:before, .clearfix:after { display: block; content: ''; line-height: 0; }
+        .clearfix:after { clear:both; }
+
     </style>
 </head>
 <body>
 <!--header 영역-->
 <header>
-    <h1>IntelliJ IDEA 단축키 15가지</h1>
+    <div id="header">
+        <h1>IntelliJ IDEA 단축키 15가지</h1>
+    </div>
 </header>
 
 <!--section 영역-->
 <section>
     <ol>
         <li>
-            <h4>Alt + Enter</h4>
+            <div class="sticky">
+                <h4>Alt + Enter</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-11-Top15Shortcuts-alt-enter.gif" alt="필요한곳 수정">
+
             <ul>
                 <li>
                     <h5>무엇이든 수정 가능하다.</h5>
@@ -33,15 +40,25 @@
                 </li>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
-            <h4>F2</h4>
+            <div class="sticky">
+                <h4>F2</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-12-Top15Shortcuts-f2.png" alt="다음으로 점프">
-            <ul>
-                <li><h5>다음 오류, 경고, 제안으로 이동한다.</h5></li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <h5>다음 오류, 경고, 제안으로 이동한다.</h5>
+                    </li>
+                </ul>
+            </div>
         </li>
+        <div class="clearfix"> </div>
         <li>
-            <h4>Cmd + 1(Mac) 또는 Alt + 1(Windows)</h4>
+            <div class="sticky">
+                <h4>Cmd + 1(Mac) 또는 Alt + 1(Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-13-Top15Shortcuts-cmd-1.png" alt="프로젝트 창 열기">
             <ul>
                 <li><h5>프로젝트 창을 열수있다.</h5></li>
@@ -51,8 +68,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Esc</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-14-Top15Shortcuts-esc.png" alt="닫기">
             <ul>
                 <li><h5>에디터에 다시 포커스가 위치하게 하려면 Esc를 누르면된다. </h5></li>
@@ -62,8 +82,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Cmd+E(Mac) 또는 Ctrl+E(Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-15-Top15Shortcuts-cmde.png" alt="최근에 열었던 파일 확인">
             <ul>
                 <li><h5>가장 최근 열었던 파일을 확인할 수 있다.</h5></li>
@@ -73,8 +96,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Cmd+B(Mac) 또는 Ctrl+B (Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-16-Top15Shortcuts-cmdb.png" alt="심볼의 선언으로 이동">
             <ul>
                 <li><h5>심볼의 선언으로 이동할 수 있다.</h5></li>
@@ -89,8 +115,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Alt+F7</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-17-Top15Shortcuts-alt-f7.png" alt="모든 사용 위치 표시">
             <ul>
                 <li><h5>모든 사용 위치가 표시된다.</h5></li>
@@ -99,8 +128,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Ctrl 두번</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-18-Top15Shortcuts-ctrl-ctrl.png" alt="모든 항목 실행 가능">
             <ul>
                 <li><h5>무엇이든 실행 가능하다.</h5></li>
@@ -109,8 +141,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Alt+위/아래 방향키(Mac) 또는 Ctrl+W, Ctrl+Shift+W (Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-19-Top15Shortcuts-Alt-up.png" alt="선택영역 확대 축소">
             <ul>
                 <li><h5>커서 주변의 코드 섹션을 확장하거나 축소할 수 있다.</h5></li>
@@ -124,9 +159,11 @@
                 </ul>
             </ul>
         </li>
-
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Cmd+/(Mac) 또는 Ctrl+/(Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-20-Top15Shortcuts-cmd-slash.png" alt="주석 처리">
             <ul>
                 <li><h5>간편하게 주석을 추가할 수 있다.</h5></li>
@@ -142,9 +179,11 @@
                 </ul>
             </ul>
         </li>
-
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Shift+Cmd+Enter(Mac) 또는 Shift+Ctrl+Enter(Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-21-Top15Shortcuts-Shift-cmd-enter.png" alt="현재 구문 완성">
             <ul>
                 <li><h5>현재 구문을 완성시켜준다.</h5></li>
@@ -155,8 +194,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Alt+Cmd+L(Mac) 또는 Ctrl+Alt+L(Windows) </h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-22-Top15Shortcuts-alt-cmd-l.png" alt="표준에 맞도록 서식 지정">
             <ul>
                 <li><h5>간편하게 현재 파일의 서식을 프로젝트 표준에 맞춰준다.</h5></li>
@@ -165,8 +207,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Ctrl+T(Mac) 또는 Shift+Ctrl+Alt+T(Windows) </h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-23-Top15Shortcuts-ctrl-t.png" alt="사용 가능한 리팩토링 옵션 표시">
             <ul>
                 <li><h5>사용 가능한 리팩토링 옵션이 표시된다.</h5></li>
@@ -175,8 +220,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Shift+Cmd+A(Mac) 또는  Shift+Ctrl+A(Windows)</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-24-Top15Shortcuts-cmd-shift-a-2.png" alt="모든 액션 검색 가능">
             <ul>
                 <li><h5>IntelliJ IDEA에서 모든 액션을 검색할 수 있습니다.</h5></li>
@@ -187,8 +235,11 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
         <li>
+            <div class="sticky">
             <h4>Shift 두 번</h4>
+            </div>
             <img src="https://blog.jetbrains.com/wp-content/uploads/2020/03/idea-02-25-Top15Shortcuts-shift-shift-2.png" alt="전체 검색">
             <ul>
                 <li><h5>Shift 키를 두 번 누르면 모든 항목을 검색할 수 있는 검색 상자가 열립니다.</h5></li>
@@ -197,6 +248,7 @@
                 </ul>
             </ul>
         </li>
+        <div class="clearfix"> </div>
     </ol>
 
     <hr>
