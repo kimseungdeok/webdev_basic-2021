@@ -1,2 +1,4 @@
-img { width: 50%;height: 1%; }
+img { width: 50%; height: 1%; float : left; margin: 30px}
 .sticky { position : sticky; top : 4px;}
+.clearfix:before, .clearfix:after { display: block; content: ''; line-height: 0; }
+.clearfix:after { clear:both; }
