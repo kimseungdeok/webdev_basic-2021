@@ -1,3 +1,4 @@
+@charset "utf-8";
 img { width: 50%; height: 1%; }
 .sticky { position : sticky; top : 4px;}
 .clearfix:before, .clearfix:after { display: block; content: ''; line-height: 0; }
