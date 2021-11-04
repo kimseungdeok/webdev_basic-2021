@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        @media screen and (max-width : 639px) {body{ background-color: #ffa07a;}}
+        @media screen and (min-width : 640px) {body{ background-color: #20b2aa;}}
+        @media screen and (min-width : 1025px) {body{ background-color: #87cefa;}}
+    </style>
+</head>
+<body>
+    <div>
+        640px 미만은 #ffa07a
+        640px 이상은 #20b2aa
+        1025px 이상은 #87cefa
+    </div>
+</body>
+</html>
