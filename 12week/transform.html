@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        :root {
+            --color1: #ccccff;
+            --color2: #6495ed;
+            --color3: #4be0d0;
+            --color4: #9fe2bf;
+        
+
+        }
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items : center;
+        }
+        .wrapper {
+            width: 300px;
+            height: 500px;
+            background-color: var(--color1);
+        }
+        .wrapper .box {
+            width: 100px;
+            height: 100px;
+            font-size: 3em;
+            text-align: center;
+            line-height: 100px;
+            text-transform: uppercase;
+            background-color: var(--color2);
+            transition : 3s;
+        }
+        .wrapper:hover .box {
+            transform: translateX(200px) translateY(100px) scale(2,1) rotate(1turn) skewX(10deg);
+            /* turn은 1바퀴(360도) */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">box</div>
+    </div>
+    
+</body>
+</html>

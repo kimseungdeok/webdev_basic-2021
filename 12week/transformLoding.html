@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loding</title>
+    <style>
+    :root {
+        --color1: #ccccff;
+        --color2: #6495ed;
+        --color3: #4be0d0;
+        --color4: #9fe2bf;
+        
+/* https://9elements.github.io/fancy-border-radius/
+ */
+    }
+    * {
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items : center;
+        }
+        .wrapper {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .wrapper p {
+            position: absolute;
+            top: 120px;
+            right: 120px;
+        }
+        .wrapper .circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--color1);
+            animation: ani 3s linear infinite;
+            border-radius: 30% 70% 30% 70% / 83% 44% 56% 17%;
+        }
+        @keyframes ani {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .wrapper .circle:nth-child(2) {
+            border-color: var(--color2);
+            animation-duration: 5s;
+            border-radius: 30% 70% 48% 52% / 71% 30% 70% 29% 
+        }
+        .wrapper .circle:nth-child(3) {
+            border-color: var(--color3);
+            animation-duration: 3s;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <p>loding...</p>
+    </div>
+</body>
+</html>
