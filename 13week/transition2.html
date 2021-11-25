@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition2</title>
+    <style>
+    * {
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box;
+    }
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    .wrapper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    .box {
+        border: 5px black solid;
+        border-radius: 10px;
+        padding: 15px;
+        transition: 0.5s ease-in;
+    }
+    .box:hover {
+        box-shadow: 5px 5px 0 gray,
+        10px 10px 0 red,
+        15px 15px 0 orange,
+        20px 20px 0 blanchedalmond;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            Jeju Univ
+        </div>
+    </div>
+</body>
+</html>

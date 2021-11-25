@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>svg</title>
+    <style>
+    * {
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box;
+    }
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    .wrapper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    .wrapper svg line {
+        animation : stroke 1s linear infinite;
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+    }
+    @keyframes stroke {
+        from {
+            stroke-dashoffset: 0;
+        }
+        to {
+            stroke-dashoffset: 100;
+        }
+    }
+
+    .wrapper svg circle {
+        animation: circle 1s linear infinite;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    @keyframes circle {
+        to {
+            transform: rotate(1turn);
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <svg>
+            <line x1="0" y1="0" x2="300" y2="10" stroke="black" stroke-width="3" stroke-dasharray="10 50" stroke-dashoffset="10"/>
+            <circle r="50" cx="100" cy="100" fill="white" stroke="black" stroke-width="1" stroke-dasharray="150" stroke-dashoffset="50"/>
+        </svg>
+    </div>
+    
+</body>
+</html>

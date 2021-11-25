@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <style>
+    * {
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box;
+    }
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    .wrapper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+    }
+    .box {
+        width:200px;
+        height: 200px;
+        background-color: yellow;
+        border: 1px black solid;
+        transition: border-radius 2s ease-in;
+    }
+    .box:hover {
+        border-radius: 50%;
+        background-color: orangered;
+        border: 5px blue solid;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
