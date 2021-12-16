@@ -35,23 +35,60 @@
             align-items : center;
         
         }
+        .wrapper path {
+            animation: animation 1s linear;
+        }
+        @keyframes animation {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
 
         svg path:nth-child(1) {
-            stroke-dasharray: 605px;
-            stroke-dashoffset: 605px;
+            stroke-dasharray: 933px;
+            stroke-dashoffset: 933px;
         }
         svg path:nth-child(2) {
-            stroke-dasharray: 555px;
-            stroke-dashoffset: 555px;
+            stroke-dasharray: 735px;
+            stroke-dashoffset: 735px;
             animation-delay: 0.3s;
         }
         svg path:nth-child(3) {
-            stroke-dasharray: 387px;
-            stroke-dashoffset: 387px;
+            stroke-dasharray: 493px;
+            stroke-dashoffset: 493px;
             animation-delay: 0.6s;
         }
-
-        svg {
+        svg path:nth-child(4) {
+            stroke-dasharray: 593px;
+            stroke-dashoffset: 593px;
+            animation-delay: 0.9s;
+        }
+        svg path:nth-child(5) {
+            stroke-dasharray: 665px;
+            stroke-dashoffset: 665px;
+            animation-delay: 1.2s;
+        }
+        svg path:nth-child(6) {
+            stroke-dasharray: 735px;
+            stroke-dashoffset: 735px;
+            animation-delay: 1.5s;
+        }
+        svg path:nth-child(7) {
+            stroke-dasharray: 513px;
+            stroke-dashoffset: 513px;
+            animation-delay: 1.8s;
+        }
+        svg path:nth-child(8) {
+            stroke-dasharray: 525px;
+            stroke-dashoffset: 525px;
+            animation-delay: 2.1s;   
+        }
+        svg path:nth-child(9) {
+            stroke-dasharray: 735px;
+            stroke-dashoffset: 735px;
+            animation-delay: 2.4s;
+        }
+        /* svg {
             animation: fill 0.5s linear forwards 3.4s;
         }
         @keyframes fill {
@@ -66,7 +103,7 @@
             stroke: var(--color2);
             stroke-width: 5;
             animation: stroke 1s linear forwards;
-        }
+        } */
 
     </style>
 
